@@ -14,26 +14,23 @@ app
 	.set('views', path.join(__dirname, 'views'))
 	.get('/', index)
 
-io.on('connection', function(socket) {
-	console.log('a user connected')
-
-	socket.on('chat message', function(msg) {
-		console.log('message: ' + msg)
-	})
-
-	socket.on('chat message', function(msg) {
-		io.emit('chat message', msg)
-	})
-
-	socket.on('disconnect', function() {
-		console.log('user disconnected')
-	})
-})
-
 function index(req, res) {
 	res.render('index.ejs')
 }
 
 http.listen(port, function() {
 	console.log('listening on *:' + port)
+})
+
+io.on('connection', function(socket) {
+	console.log('user connected ' + '(' + socket.id + ')')
+
+	socket.on('chat message', function(msg) {
+		console.log('message ' + '(' + socket.id + ') ' + msg)
+    io.emit('chat message', msg)
+	})
+
+	socket.on('disconnect', function() {
+		console.log('user disconnected ' + '(' + socket.id + ')')
+	})
 })
