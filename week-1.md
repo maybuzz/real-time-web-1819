@@ -1,80 +1,66 @@
-# Excercises Week 1
+# Real-Time Web @cmda-minor-web · 2018-2019
 
-Real-Time Web - Minor Web Development
+## Summary
 
-## Intention
+...
 
-After all you learned so far, you now will learn how to build real-time applications, and rule the world!
+![...](/img/...png)
 
-## Exercises
+## Table of contents
 
-1. [Basic setup][exercise1]
-2. [A unique chat app ][exercise2]
-3. [Deploy your app][exercise3]
+- [Live demo](#Live-demo)
+- [Install](#Install)
+- [Features](#Features)
+- [Application](#Application)
+- [To-do](#To-do)
+- [Resources](#Resources)
 
-### Exercise 1: Basic setup
+## Live demo
 
-#### Readme (Thursday)
+[Click here](...) to see my live demo.
 
-[Fork this repo][repo]
-This week you’re going to recreate [this basic chat app][socket.io chat] with the addition of at least one new feature. Write down what your project’s all about in the readme of the project. Next week you’ll start a new project so a basic readme for this week will do.
+## Install
 
-_Resources:_ [readme driven development][rdd], [mastering markdown][markdown]
-_Note:_ keep the docs up-to-date while working on your project.
+To install this project you'll have to fork this repository and open your terminal
 
-#### Style (Thursday)
+```bash
+  # insert your username to this link
+  # put this in your terminal to clone the repo
+  git clone https://github.com/your-user-name/real-time-web-1819/
 
-Maybe you already have a preferred code-style, maybe you want to try something else.
-Set up at least an [npm script][npm], and probably also some integration with your editor. Use Nodemon or similar to allow instant reloading while developing.
+  # run the following code to build the app
+  npm start
+```
 
-_Resources:_ [xo], [standard], [prettier], [eslint]
+## Features
 
-#### Server (Thursday)
+- [x] websockets -> `socket.io`
+- [ ] `.ejs` templating
+- [ ] `express` server
+- [ ] new code-style -> `prettier`, `eslint`
 
-Set-up Express (or similar) for static file serving / templating
+## Application
 
-**Resources:** [express api]
+This week I recreated [this basic chat app](https://socket.io/demos/chat/) using [this tutorial](https://socket.io/get-started/chat/).
 
-### Exercise 2: A unique chat app
+## To-do
 
-Set-up socket.io. Create a basic real-time app using sockets. Bare minimum is a successful message from client to server and from server to client (“round trip”) as well as one additional chat feature YOU HAVE COME UP WITH. Here is an [example][example razpudding] I made that slowly fades out words commonly used by the people writing the chat messages forcing them to use new words.
-Creating a unique feature often means storing some information about users serverside in-memory. Ask us if you have any questions about how to achieve that.
+- [x] `Express` `nodejs` server
+- [x] `.ejs` templating
+- [ ] Come up with a unique concept
+- [x] Implement `socket.io`
+- [x] Setup basic socket.io app using tutorial
+- [x] `prettier`
+- [ ] `eslint`
+- [ ] Add new feature
+- [ ] Deploy application
 
-[Examples that are not unique][get started]: Storing nicknames, showing who’s online or any of the other feature requests listed at the bottom of the socket.io tutorial.
+## Resources
 
-Examples that are unique: Using D3 to structure texts into svg art, using words to fight each other in a text based game, additional features you can earn if you stay in chat long enough.
-**It doesn’t even have to be a chat app, just use the socket.io framework.**
+- [Socket.io basic chat](https://socket.io/demos/chat/)
+- [Socket.io tutorial](https://socket.io/get-started/chat/)
+- [Socket.io basic chat](https://socket.io/demos/chat/)
 
-Think of something that matches your skill level. If you have trouble understanding the basics of socket.io, focus on the basics (and talk to us if you need help).
+## License
 
-Extra challenge: Instead of socket.io, use the native [server-sent-events][sse]! It works very well although sending messages from client to server is trickier.
-
-**Resources:** [socket.io]
-
-### Exercise 3: Deploy your app
-
-Get your app running on the web! Put a link to your live demo at the top of your readme. Include a screenshot in the repo showing of the unique feature you built.
-
-**Resources:** [now], [heroku], [digitalocean].  
-**Note:** Don’t 😱 if this doesn’t work out this week: there’s plenty time to do it in week 2 or week 3. But it may be advantageous if you get around to deploying now
-
-[exercise1]: https://github.com/cmda-minor-web/real-time-web-1819/blob/master/week-1.md#exersise-1-basic-setup
-[exercise2]: https://github.com/cmda-minor-web/real-time-web-1819/blob/master/week-1.md#exercise-2-a-unique-chat-app
-[exercise3]: https://github.com/cmda-minor-web/real-time-web-1819/blob/master/week-1.md#exercise-3-deploy-your-app
-[repo]: https://github.com/cmda-minor-web/real-time-web-1819
-[socket.io]: https://socket.io/
-[socket.io chat]: https://socket.io/demos/chat/
-[npm]: https://docs.npmjs.com/cli/run-script
-[rdd]: http://tom.preston-werner.com/2010/08/23/readme-driven-development.html
-[markdown]: https://guides.github.com/features/mastering-markdown/
-[xo]: https://github.com/xojs/xo
-[standard]: https://github.com/standard/standard
-[prettier]: https://github.com/prettier/prettier
-[eslint]: https://github.com/eslint/eslint
-[express api]: https://expressjs.com/en/4x/api.html
-[example razpudding]: https://github.com/Razpudding/socketio-chat-app
-[get started]: https://socket.io/get-started/chat/
-[sse]: https://www.voorhoede.nl/en/blog/real-time-communication-with-server-sent-events/
-[now]: https://zeit.co/now
-[heroku]: https://www.heroku.com/
-[digitalocean]: https://www.digitalocean.com/
+[MIT](LICENSE) © [Luna May Johansson](https://github.com/maybuzz)

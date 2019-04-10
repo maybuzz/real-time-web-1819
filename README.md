@@ -41,6 +41,7 @@ To install this project you'll have to fork this repository and open your termin
 
 - [x] `Express` `nodejs` server
 - [x] `.ejs` templating
+- [x] basic chat application, [week 1](https://github.com/maybuzz/real-time-web-1819/blob/master/week-1.md)
 
 ## Resources
 
