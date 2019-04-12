@@ -47,12 +47,19 @@ This week I recreated [this basic chat app](https://socket.io/demos/chat/) using
 
 - [x] `Express` `nodejs` server
 - [x] `.ejs` templating
-- [ ] Come up with a unique concept
 - [x] Implement `socket.io`
 - [x] Setup basic socket.io app using tutorial
 - [x] `prettier`
 - [ ] `eslint`
+- [ ] Come up with a unique concept
 - [ ] Add new feature
+  - [x] Split words in characters
+  - [x] Push characters to separate arrays
+  - [x] Count characters
+  - [ ] Write events for when counter reaches ...
+  - [ ] Change certain words to `bobba`
+  - [ ] Add database
+- [ ] Add styling
 - [ ] Deploy application
 
 ## Resources

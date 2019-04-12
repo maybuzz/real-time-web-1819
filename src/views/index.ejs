@@ -5,10 +5,23 @@
 
   <body>
 
-    <ul id="messages"></ul>
-    <form action="">
-      <input id="m" autocomplete="off" /><button>Send</button>
-    </form>
+    <main>
+      <header class="header">
+        <h1>Welcome to our chat</h1>
+      </header>
+      <section class="chat">
+        <ul id="messages"></ul>
+
+        <form id="form" action="">
+          <input id="m" autocomplete="off" /><button id="send">SEND</button>
+        </form>
+      </section>
+      <section class="side">
+        <h2 class="title">counts</h2>
+        <ul id="chars"></ul>
+      </section>
+
+    </main>
 
     <% include partials/tail.ejs %>
 
