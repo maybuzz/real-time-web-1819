@@ -72,14 +72,9 @@ io.on('connection', function(socket) {
 })
 
 function index(req, res) {
-	fs.readFile('static/data/chars.json', 'utf8', onRead)
-
-	function onRead(err, data) {
-		let counter = JSON.parse(data)
-		res.render('index', {
-			counts: counter
-		})
-	}
+	res.render('index', {
+		counts: counter
+	})
 }
 
 http.listen(port, function() {
