@@ -72,9 +72,7 @@ io.on('connection', function(socket) {
 })
 
 function index(req, res) {
-	res.render('index', {
-		counts: counter
-	})
+	res.render('index')
 }
 
 http.listen(port, function() {
