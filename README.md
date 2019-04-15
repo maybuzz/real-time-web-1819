@@ -39,9 +39,22 @@ To install this project you'll have to fork this repository and open your termin
 
 ## To-do
 
-- [x] `Express` `nodejs` server
-- [x] `.ejs` templating
 - [x] basic chat application, [week 1](https://github.com/maybuzz/real-time-web-1819/blob/master/week-1.md)
+- [x] concept
+- [ ] svg
+  - [x] island setup
+  - [x] vulcano
+  - [x] water
+  - [ ] trees
+  - [ ] flowers
+  - [x] weed plants
+  - [x] road
+  - [x] car
+  - [x] tunnel
+  - [x] rails
+  - [ ] train
+  - [x] trump statue
+- [ ] day and night mode
 
 ## Resources
 

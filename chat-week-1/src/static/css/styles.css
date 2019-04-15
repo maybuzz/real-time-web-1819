@@ -6,7 +6,7 @@
 }
 
 body {
-  background-color: lightgreen;
+  background-color: LightGray;
   width: 100%;
   height: 100%;
   font: 1rem Helvetica, Arial;
@@ -34,7 +34,7 @@ h2 {
   grid-area: header;
   width: 100vw;
   height: 5vh;
-  background-color: gray;
+  background-color: SlateBlue;
   color: #fff;
   border-bottom: solid 1px #fff;
   grid-column: span 4;
@@ -45,13 +45,14 @@ h2 {
 .side {
   grid-area: side;
   height: 95vh;
-  background-color: mediumpurple;
+  background-color: rgb(238, 130, 238);
   border-left: solid 1px #fff;
   text-align: center;
 }
 
 .title {
   margin: .4rem 0;
+  color: red;
 }
 
 #chars {
@@ -62,6 +63,7 @@ h2 {
 
 #chars li {
   margin-bottom: .35rem;
+  color: red;
 }
 
 .value {
@@ -82,11 +84,12 @@ form {
   width: 75%;
   height: 10vh;
   padding-top: .75rem;
-  background-color: gray;
+  background-color: #fff;
 }
 
 form input {
   border: solid 1px #fff;
+  border-radius: 25px;
   background-color: #ddd;
   padding: 1rem;
   width: 90%;
@@ -95,8 +98,11 @@ form input {
 
 form button {
   width: 9.5%;
-  background: violet;
+  background: SlateBlue;
+  color: #fff;
+  font-weight: bold;
   border: solid 1px #fff;
+  border-radius: 25px;
   height: 6.75vh;
 }
 
@@ -108,8 +114,11 @@ form button {
 
 #messages li {
   padding: .5rem 1rem;
+  margin-left: .5rem;
+  width:
   border-bottom: solid 1px #fff;
   text-align: right;
+  border-radius: 25px;
 }
 
 #messages li:nth-child(odd) {
