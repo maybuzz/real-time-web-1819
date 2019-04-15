@@ -2,7 +2,7 @@
 
 ## Summary
 
-...
+App voor real time web 
 
 ![...](/img/...png)
 
