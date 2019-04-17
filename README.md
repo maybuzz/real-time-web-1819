@@ -2,7 +2,7 @@
 
 ## Summary
 
-App voor real time web 
+App voor real time web
 
 ![...](/img/...png)
 
@@ -57,8 +57,11 @@ To install this project you'll have to fork this repository and open your termin
 - [ ] day and night mode
 
 ## Resources
-
-- [...](...)
+- [Island game inspiration](http://spele.nl/grow-island-spel/)
+- [Weed svg](https://www.topsimages.com/images/weed-plant-svg-17.html)
+- [Trump svg](https://900svgfile.blogspot.com/2016/04/free-donald-trump-character-with-flat.html)
+- [Rocket svg](http://www.clker.com/clipart-rocket-26.html)
+- [Positive words](http://positivewordsresearch.com/top-positive-words-emotions-used-these-days-on-social-media/)
 
 ## License
 
