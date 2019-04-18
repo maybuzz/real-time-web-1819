@@ -41,10 +41,6 @@ var channels = {
 
 var stream = client.streamChannels({ track: channels })
 
-var weed = T.stream('statuses/filter', { track: ['420', 'weed', 'stoned', 'stoner', 'marijuana', 'haze', 'lemonhaze'] })
-
-var negative = T.stream('statuses/filter', { track: ['facism', 'racism', 'nazi', 'hitler'] })
-
 stream.on('channels/weed', function (tweet) {
   console.log("weed-tweet: ", tweet)
 })
