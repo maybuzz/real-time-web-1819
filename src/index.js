@@ -34,7 +34,7 @@ function index(req, res) {
 // })
 
 var channels = {
-	"weed" : ['420','weed','stoned','marijuana','haze', 'lemonhaze'],
+	"weed" : ['420','stoner','stoned','marijuana','haze', 'lemonhaze'],
 	"negative" : ['facism','racism','nazi','hitler'],
 	"positive" : ['javascript','nodejs','html5','css','angularjs']
 }
