@@ -54,7 +54,7 @@ The negative tags contribute to deforestation to collect palm oil to use as a in
 
 #### Negative
 - `#nutella` -> to remove trees
-- `#orea` -> to remove trees
+- `#oreo` -> to remove trees
 - `#mcdonalds` -> to remove trees
 - `#burgerking` -> to remove trees
 - `#starbucks` -> to remove trees

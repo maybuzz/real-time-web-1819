@@ -27,6 +27,6 @@
     "path": "^0.12.7",
     "prettier": "^1.16.4",
     "socket.io": "^2.2.0",
-    "twit": "^2.2.11"
+    "twitter-stream-channels": "^1.0.1"
   }
 }

@@ -1,3 +1,105 @@
+/* colors */
+:root {
+  --color-text: #000;
+  --color-text-light: #fff;
+  --color-text-middle: #757575;
+  --color-text-dark: #00635c;
+  --color-text-special: #5444d7;
+  --color-backgr-light: #fff;
+  --color-backgr-middle: #ccc;
+}
+
+/* svg {
+  height:60vh;
+  width:50vw;
+} */
+
+/* general */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
 body {
+  height: 100vh;
+  width: 100vw;
+  font-size: 16px;
+  font-family: monospace;
   text-align: center;
+  background-color: #ccc;
+}
+
+.app {
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: center;
+}
+
+/* main */
+.main {
+  background-color: #fff;
+  border-radius: 15px;
+  width: 100%;
+}
+.main-svg {
+  height: 35rem;
+  border-radius: 15px;
+}
+
+/* btn */
+.btn {
+  border: solid 2px #000;
+  border-radius: 15px;
+  /* padding: .5rem 2rem; */
+}
+
+.btn:hover {
+  background-color: #ddd;
+}
+
+/* sides */
+li {
+  display: block;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+li:hover, li:focus {
+  transition: all 0.1s ease-in-out;
+  transform: scale(1.1);
+}
+
+.side-left {
+  background-color: lightgreen;
+  height: 100%;
+  width: 15%;
+  margin-right: 1.5rem;
+}
+
+.side-right {
+  background-color: tomato;
+  height: 100%;
+  width: 15%;
+  margin-left: 1.5rem;
+}
+
+.left-title , .right-title {
+  margin-bottom: 1.5rem;
+}
+
+.sidemenu-left {
+}
+
+.sidemenu-right {
+}
+
+.pos {
+
+}
+
+.neg {
+
 }
