@@ -6,11 +6,7 @@ const express = require('express')
 const app = express()
 const http = require('http').Server(app)
 const io = require('socket.io')(http)
-const TwitterStreamChannels = require('twitter-stream-channels');
-var credentials = require('./config');
 const port = process.env.PORT || 1999
-
-require('dotenv').config()
 
 app
 	.use(express.static(path.join(__dirname, 'static')))
@@ -20,52 +16,51 @@ app
 	.set('views', path.join(__dirname, 'views'))
 	.get('/', index)
 
-const client = new TwitterStreamChannels(credentials)
-
-const channels = {
-    "moreTrees" : ['#trump', '#extinctionrebellion','#climatestrike','#schoolstrike4climate','#youthforclimate','#fridaysforfuture'],
-    "lessTrees" : ['#nutella','#oreo','#mcdonalds','#burgerking', '#starbucks'],
-    "morePlastic" : ['#nestle','#cocacola','#pepsi','#danone','#unilever'],
-    "lessPlastic" : ['#plasticpollution','#stopplasticpollution'],
-    "lessTrash" : ['#trashtag','#trashchallenge','#30daysofpickinguplitter'],
-}
-
-const stream = client.streamChannels({ track:channels })
-
 const addingTrees = {
   name: 'moreTrees',
   initialHashtag: ["#extinctionrebellion", "#climatestrike", "#schoolstrike4climate", "#youthforclimate", "#fridaysforfuture"],
   tweets: [],
   count: 0
 }
-
 const removingTrees = {
   name: 'lessTrees',
   initialHashtag: ["#nutella", "#oreo", "#mcdonalds", "#burgerking", "#starbucks"],
   tweets: [],
   count: 0
 }
-
 const addingPlastic = {
   name: 'morePlastic',
   initialHashtag: ["#nestle", "#cocacola", "#pepsi", "#danone", "#unilever"],
   tweets: [],
   count: 0
 }
-
 const removingPlastic = {
   name: 'lessPlastic',
   initialHashtag: ["#plasticpollution", "#stopplasticpollution"],
   tweets: [],
   count: 0
 }
-
 const removingTrash = {
   name: 'lessTrash',
   initialHashtag: ["#trashtag", "#trashchallenge", "#30daysofpickinguplitter"],
   tweets: [],
   count: 0
 }
+
+const TwitterStreamChannels = require('twitter-stream-channels')
+const credentials = require('./config')
+
+const client = new TwitterStreamChannels(credentials)
+
+const channels = {
+    "moreTrees" : ['#extinctionrebellion', '#climatestrike', '#schoolstrike4climate', '#youthforclimate', '#fridaysforfuture'],
+    "lessTrees" : ['#nutella', '#oreo', '#mcdonalds', '#burgerking', '#starbucks'],
+    "morePlastic" : ['#nestle', '#cocacola', '#pepsi', '#danone', '#unilever'],
+    "lessPlastic" : ['#plasticpollution', '#stopplasticpollution'],
+    "lessTrash" : ['#trashtag', '#trashchallenge', '#30daysofpickinguplitter'],
+}
+
+const stream = client.streamChannels({ track:channels })
 
 stream.on('channels/moreTrees',function(tweet){
   addingTrees.tweets.push(tweet.text)
@@ -102,10 +97,6 @@ stream.on('channels/lessTrash',function(tweet){
   console.log('>lessTrash', removingTrash)
 })
 
-function index(req, res) {
-	res.render('index')
-}
-
 function addTree() {
   console.log("add tree");
 }
@@ -126,39 +117,10 @@ function removeTrash() {
   console.log("remove trash");
 }
 
+function index(req, res) {
+	res.render('index')
+}
+
 http.listen(port, function() {
 	console.log('listening on *:' + port)
 })
-
-// const myData = [
-//   {
-//     name: 'moreTrees',
-//     initialHashtag: ["#trump", "#extinctionrebellion", "#climatestrike", "#schoolstrike4climate", "#youthforclimate", "#fridaysforfuture"],
-//     tweets: [],
-//     count: 0
-//   },
-//   {
-//     name: 'lessTrees',
-//     initialHashtag: ["#nutella", "#oreo", "#mcdonalds", "#burgerking", "#starbucks"],
-//     tweets: [],
-//     count: 0
-//   },
-//   {
-//     name: 'morePlastic',
-//     initialHashtag: ["#nestle", "#cocacola", "#pepsi", "#danone", "#unilever"],
-//     tweets: [],
-//     count: 0
-//   },
-//   {
-//     name: 'lessPlastic',
-//     initialHashtag: ["#plasticpollution", "#stopplasticpollution"],
-//     tweets: [],
-//     count: 0
-//   },
-//   {
-//     name: 'lessTrash',
-//     initialHashtag: ["#trashtag", "#trashchallenge", "#30daysofpickinguplitter"],
-//     tweets: [],
-//     count: 0
-//   }
-// ]
