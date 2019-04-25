@@ -41,12 +41,15 @@ body {
 /* main */
 .main {
   background-color: var(--color-backgr);
-  border-radius: 15px;
   width: 100%;
 }
 .main-svg {
   height: 35rem;
-  border-radius: 15px;
+}
+
+#plasticsoup1, #plasticsoup2, #plasticsoup3, #plasticsoup4, #plasticsoup5, #trees1, #trees2, #trees3, #trees4 {
+  position: absolute;
+  height: 35rem
 }
 
 /* btn */

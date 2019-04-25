@@ -83,12 +83,6 @@ stream.on('channels/name', function (tweet) {
 
 ## Data
 
-
-## Feedback
-Overall I'm quite happy with my concept. I hope I will finish everything in time, but I'm gonna start "small". I already made the island in illustrator. I only need to add the plastic in layers.
-
-Ik heb verder niet echt specifieke vragen, maar ik zou wel feedback op m'n diagram willen. Ik vind het soms nog wel lastig om goede diagrammen te maken, zeker als ik nog niet zo ver ben.
-
 ## To-do
 - [x] basic chat application, [week 1](https://github.com/maybuzz/real-time-web-1819/blob/master/week-1.md)
 - [x] concept
@@ -100,8 +94,11 @@ Ik heb verder niet echt specifieke vragen, maar ik zou wel feedback op m'n diagr
   - [ ] plastic
   - [ ] litter
 - [x] connect to twitter api
-- [ ] format data
-- [ ] data life cycle diagram
+- [x] format data
+- [x] data life cycle diagram
+
+- [ ] socket.io setup
+- [ ] client `main.js`
 
 ## Resources
 - [Island game inspiration](http://spele.nl/grow-island-spel/)
